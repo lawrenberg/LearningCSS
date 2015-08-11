@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles/animation_1.css" type="text/css"  media="screen, projection" rel="stylesheet"  />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body  id="background">
+  <div id="sky">
+    <div id="cloudContainers">
+    </div>
+
+  </div>
+  <div id="ground">
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var cloudCount = 20;
+  var min = 0;
+  var max = 7;
+  var numberWord = [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten"
+  ];
+
+var html = "";
+  for(var i = 1 ; i < cloudCount ; ++i) {
+    var idx = Math.floor(Math.random() * (max - min + 1)) + min;
+    var animationSelect = Math.floor(Math.random() * (max - min + 1)) + min;
+    if(idx === 0) {
+      idx = idx + 1;
+    }
+    html += "<div class='cloud cloud" + numberWord[idx]  + " cloud-animation-" + (animationSelect + 1) +" float'></div>";
+  }
+
+  $("#cloudContainers").html(html);
+});
+</script>

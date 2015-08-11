@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+#background {
+  background-color: #88D2F4
+}
+
+#sky {
+  height: 200px;
+  z-index: 5px;
+}
+
+.cloud {
+  background-image: url("../../assets/imgs/cloud.png");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  height: 83px;
+  width: 130px;
+}
+
+.cloudOne {
+  position: fixed;
+  z-index: 10;
+  top: 10px;
+  left: -5%;
+}
+
+.cloudOne:after {
+  content:"Cloud One"
+}
+
+.cloudTwo {
+  position: fixed;
+  z-index: 11;
+  top: 20px;
+  left: -10%;
+}
+.cloudTwo:after {
+  content: "cloud two"
+}
+
+.cloudThree {
+  position: fixed;
+z-index: 12;
+top: 30px;
+left: -20%;
+}
+
+.cloudThree:after {
+  content: "cloud 3"
+}
+
+.cloudFour {
+  position: fixed;
+z-index: 12;
+top: 40px;
+left: -30%;
+}
+
+.cloudFour:after {
+  content: "cloud 4"
+}
+
+.cloudFive {
+  position: fixed;
+z-index: 12;
+top: 50px;
+left: -50%;
+}
+
+.cloudSix {
+  position: fixed;
+z-index: 12;
+top: 60px;
+left: -60%;
+}
+
+.cloudSix:after {
+  content: "cloud 6"
+}
+
+.cloudFive:after {
+  content: "cloud 5"
+}
+
+.cloudSeven {
+  position: fixed;
+z-index: 12;
+top: 70px;
+left: -65%;
+}
+
+.cloudSeven:after {
+  content: "cloud 7"
+}
+.cloudEight {
+  position: fixed;
+z-index: 12;
+top: 80px;
+left: -70%;
+}
+
+.cloudEight:after {
+  content: "cloud 8"
+}
+
+.cloud-animation-1 {
+  animation:
+    cloudOneNudge 40s linear infinite;
+  -webkit-animation:
+    cloudOneNudge 40s linear infinite;
+}
+
+.cloud-animation-2 {
+  animation:
+    cloudTwoNudge 45s linear infinite;
+  -webkit-animation:
+    cloudTwoNudge 45s linear infinite;
+}
+
+.cloud-animation-3 {
+  animation:
+    cloudThreeNudge 50s linear infinite;
+  -webkit-animation:
+    cloudThreeNudge 50s linear infinite;
+}
+
+.cloud-animation-4 {
+  animation:
+    cloudFourNudge 55s linear infinite;
+  -webkit-animation:
+    cloudFourNudge 55s linear infinite;
+}
+
+.cloud-animation-5 {
+  animation:
+    cloudFiveNudge 60s linear infinite;
+  -webkit-animation:
+    cloudFiveNudge 60s linear infinite;
+}
+
+.cloud-animation-6 {
+  animation:
+    cloudSixNudge 65s linear infinite;
+  -webkit-animation:
+    cloudSixNudge 65s linear infinite;
+}
+
+.cloud-animation-7 {
+  animation:
+    cloudSevenNudge 70s linear infinite;
+  -webkit-animation:
+    cloudSevenNudge 70s linear infinite;
+}
+
+.cloud-animation-8 {
+  animation:
+    cloudEightNudge 75s linear infinite;
+  -webkit-animation:
+    cloudEightNudge 75s linear infinite;
+}
+
+.float  {
+  float: left;
+}
+
+@-webkit-keyframes cloudOneNudge {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudOneNudge {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes cloudTwoNudge {
+  0% {
+    left: -40%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudTwoNudge {
+  0% {
+    left: -40%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@-webkit-keyframes cloudThreeNudge {
+  0% {
+    left: -70%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudThreeNudge {
+  0% {
+    left: -70%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes cloudFourNudge {
+  0% {
+    left: -80%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudFourNudge {
+  0% {
+    left: -80%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes cloudFiveNudge {
+  0% {
+    left: -90%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudFiveNudge {
+  0% {
+    left: -90%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes cloudSixNudge {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudSixNudge {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@-webkit-keyframes cloudSevenNudge {
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudSevenNudge {
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@-webkit-keyframes cloudEightNudge {
+  0% {
+    left: -5%;
+  }
+
+  100% {
+    left: 100%
+  }
+}
+@keyframes cloudEightNudge {
+  0% {
+    left: inherit;
+  }
+
+  100% {
+    left: 100%
+  }
+}
